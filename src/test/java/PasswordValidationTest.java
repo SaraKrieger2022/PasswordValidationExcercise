@@ -41,4 +41,13 @@ class PasswordValidationTest {
         Assertions.assertEquals(true, actual);
     }
 
+    @Test
+    void hasPasswordNoDigits(){
+        //given
+        boolean digits = false;
+        //when
+        boolean actual =PasswordValidation.hasPasswordNoDigits("Sommer2022");
+        //then
+        Assertions.assertEquals(false, actual);
+    }
 }
