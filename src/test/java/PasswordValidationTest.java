@@ -42,12 +42,49 @@ class PasswordValidationTest {
     }
 
     @Test
-    void hasPasswordNoDigits(){
+    void hasPasswordNoDigits() {
         //given
         boolean digits = false;
         //when
-        boolean actual =PasswordValidation.hasPasswordNoDigits("Sommer2022");
+        boolean actual = PasswordValidation.hasPasswordNoDigits("Sommer2022");
         //then
         Assertions.assertEquals(false, actual);
     }
+
+
+
+    @Test
+    void containsUpperCaseLetter() {
+        //given
+        boolean upperCase = true;
+
+        //when
+        boolean actual = PasswordValidation.containsUpperCaseLetter("Sommer2022");
+
+        //then
+        Assertions.assertEquals(true, actual);
+    }
+
+    @Test
+    void containsLowerCaseLetter(){
+        //given
+        boolean containsLowerCase = true;
+        //when
+        boolean actual = PasswordValidation.containsLowerCaseLetter("Sommer2022");
+        //then
+        assertEquals(true, actual);
+    }
+
+@Test
+    void containsBadPassword(){
+        //given
+    boolean badPassw = false;
+        //when
+    boolean actual = PasswordValidation.containsBadPassword("Passwort");
+        // then
+    Assertions.assertEquals(false, true);
+
+}
+
+
 }
