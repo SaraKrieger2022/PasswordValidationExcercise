@@ -6,14 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class PasswordValidationTest {
 
     @Test
-    void isPasswordMin7Char() {
+    void isPasswordMin8Char() {
 
         // given
-        boolean letters = false;
+        boolean letters = true;
         // when
-        boolean actual = PasswordValidation.isPasswordMin7Char("Sommer2022");
+        boolean actual = PasswordValidation.isPasswordMin8Char("Sommer2022");
         // then
-        Assertions.assertEquals(false, actual);
+        Assertions.assertEquals(true, actual);
     }
 
 
