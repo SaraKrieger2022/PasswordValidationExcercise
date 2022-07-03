@@ -75,16 +75,5 @@ class PasswordValidationTest {
         assertEquals(true, actual);
     }
 
-@Test
-    void containsBadPassword(){
-        //given
-    boolean badPassw = false;
-        //when
-    boolean actual = PasswordValidation.containsBadPassword("Passwort");
-        // then
-    Assertions.assertEquals(false, true);
-
-}
-
 
 }

@@ -60,7 +60,5 @@ public class PasswordValidation {
             return false;
     }
 
-    public static void containsBadPassword(String Password) {
 
-    }
 }
