@@ -1,5 +1,12 @@
+import java.util.Scanner;
+
 public class PasswordValidation {
 
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String customerInput = scan.nextLine();
+
+    }
 
     public static boolean isPasswordMin8Char(String password) {
         System.out.println("Das Passwort enthält mindestens 8 Zeichen.");
@@ -59,6 +66,7 @@ public class PasswordValidation {
             System.out.println("Das Passwort enthält keine Kleinbuchstaben");
             return false;
     }
+
 
 
 }
